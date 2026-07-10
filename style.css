@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Nav section starts below */
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background: lightgray; */
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+}
+
+.nav_logo {
+  height: 34px;
+}
+
+.nav_logo img {
+  height: 100%;
+}
+
+.nav_links {
+}
+
+.nav_links ul {
+  display: flex;
+}
+
+.nav_links li {
+  list-style: none;
+  padding: 3px;
+  margin: 0px 7px;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav_links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav_registerBtn {
+}
+
+.commonBtn {
+  border: none;
+  padding: 9px 20px;
+  border-radius: 5px;
+  background: #1d4ed8;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section start */
+
+.hero_section {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%),
+    url(./assets/banner.jpg);
+  /* background-image: url(./assets/banner.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_container {
+  height: 90vh;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+}
+
+.hero_title {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 10% 0 20px 0;
+}
+.hero_title em {
+  font-style: italic;
+  font-weight: 700; /* Makes "Connect" look slightly thinner/sleeker if desired */
+}
+.hero_subtitle {
+  margin-bottom: 13%;
+  line-height: 1.4;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.hero_registerBtn {
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+/* Speakers Section start */
+
+.speakers_section {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}

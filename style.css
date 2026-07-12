@@ -9,6 +9,20 @@ body {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Scrollbar style */
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+}
+
 /* Nav section starts below */
 nav {
   width: 100%;
@@ -36,19 +50,36 @@ nav {
   height: 100%;
 }
 
-.nav_links {
-}
-
 .nav_links ul {
   display: flex;
 }
 
 .nav_links li {
   list-style: none;
-  padding: 3px;
+  padding: 5px;
   margin: 0px 7px;
   text-transform: capitalize;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav_links li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: lightgray;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s linear 0.1s;
+}
+
+.nav_links li:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .nav_links ul li a {
@@ -556,7 +587,7 @@ nav {
 
 .footer_divider {
   border: none;
-  height: 0.5px;
+  height: 1px;
   background-color: #1f293d;
   margin-bottom: 10px;
 }
